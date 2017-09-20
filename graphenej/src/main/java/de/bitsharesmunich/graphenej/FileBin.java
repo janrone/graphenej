@@ -53,6 +53,9 @@ public abstract class FileBin {
             MessageDigest md1 = MessageDigest.getInstance("SHA-512");
             finalKey = md1.digest(finalKey);
             byte[] decryptedData = Util.decryptAES(rawDataEncripted, Util.bytesToHex(finalKey).getBytes());
+            if (decryptedData == null) {
+                return null;
+            }
 
             byte[] checksum = new byte[4];
             System.arraycopy(decryptedData, 0, checksum, 0, 4);
