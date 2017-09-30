@@ -3,7 +3,6 @@ version '0.4.2-SNAPSHOT'
 
 apply plugin: 'com.android.library'
 apply from: 'maven-push.gradle'
-apply plugin: 'com.github.dcendents.android-maven'
 
 
 dependencies {
