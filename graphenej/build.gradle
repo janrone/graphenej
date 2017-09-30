@@ -5,6 +5,9 @@ apply plugin: 'com.android.library'
 apply from: 'maven-push.gradle'
 apply plugin: 'com.github.dcendents.android-maven'
 
+group='com.github.janrone'
+
+
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
